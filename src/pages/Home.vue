@@ -1,4 +1,5 @@
 <template>
+  <Sidebar/>
   <div class="home">
     <h1>Bem vindo</h1>
     <span>
@@ -11,7 +12,12 @@
 </template>
 
 <script>
+import Sidebar from '../components/Sidebar.vue';
+
 export default {
-  name: 'Home'
+  name: 'Home',
+  components: {
+    Sidebar
+  }
 }
 </script>
