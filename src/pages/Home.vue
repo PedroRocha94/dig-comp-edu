@@ -14,12 +14,8 @@
 </template>
 
 <script>
-import Sidebar from '../components/Sidebar.vue';
 
 export default {
-  name: 'Home',
-  components: {
-    Sidebar
-  }
+  name: 'Home'
 }
 </script>
