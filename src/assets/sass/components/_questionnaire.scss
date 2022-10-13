@@ -59,4 +59,24 @@
       justify-content: flex-end;
     }
   }
+
+  .finish-quiz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 60%;
+    border-radius: 0.5rem;
+    margin-top: 4rem;
+    padding: 5rem;
+    
+    .finish-quiz-title {
+      margin-bottom: 2rem;
+    }
+    
+    .finish-quiz-message {
+      margin-bottom: 2rem;
+    }
+  }
 }

@@ -1,6 +1,9 @@
 <template>
   <div class="questionnaire">
-    <section class="questionnaire-section">
+    <section 
+      v-if="!quizCompleted"
+      class="questionnaire-section"
+    >
       <div class="questionnaire-header">
         <h2>Envolvimento profissional</h2>
       </div>
@@ -53,13 +56,26 @@
       />
       </div>
     </section>
+    <section
+      v-else
+      class="finish-quiz"
+    >
+      <h2 class="finish-quiz-title">Você finalizou sua auto avaliação</h2>
+      <span class="finish-quiz-message">Você pode ver seu resultado na aba de resultados</span>
+      <Button 
+        label="Ir para resultados"
+        icon="pi pi-external-link"
+        iconPos="right"
+        @click="goToCharts"
+      />
+    </section>
   </div>
 </template>
 
 <script>
 import { 
   questions, 
-  quizCompleted, 
+  quizCompleted,
   currentQuestion, 
   getCurrentQuestion, 
   nextQuestion 
@@ -78,6 +94,9 @@ export default {
   methods: {
     next() {
       nextQuestion();
+    },
+    goToCharts() {
+      this.$router.push("/charts");
     }
   }
 }
