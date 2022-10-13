@@ -16,7 +16,7 @@
         to="/quiz"
       >
         <i class="pi pi-list"></i>
-        Questionário
+        Auto Avaliação
       </router-link>
       <router-link 
         class="option"

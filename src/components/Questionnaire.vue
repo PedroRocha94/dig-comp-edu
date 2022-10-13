@@ -2,7 +2,7 @@
   <div class="questionnaire">
     <section class="questionnaire-section">
       <div class="questionnaire-header">
-        <h2>Envolvimento proficional</h2>
+        <h2>Envolvimento profissional</h2>
       </div>
 
       <div class="question">

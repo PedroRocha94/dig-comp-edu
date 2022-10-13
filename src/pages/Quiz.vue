@@ -2,7 +2,7 @@
   <div class="quiz">
     <Sidebar/>
     <div class="content">
-      <h1>Questionário</h1>
+      <h1>Auto Avaliação</h1>
       <Questionnaire />
     </div>
   </div>
