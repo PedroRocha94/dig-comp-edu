@@ -7,6 +7,7 @@
         tag="li" 
         to="/"
       >
+        <i class="pi pi-home"></i>
         Início
       </router-link>
       <router-link 
@@ -14,6 +15,7 @@
         tag="li" 
         to="/quiz"
       >
+        <i class="pi pi-list"></i>
         Questionário
       </router-link>
       <router-link 
@@ -21,6 +23,7 @@
         tag="li" 
         to="/charts"
       >
+        <i class="pi pi-chart-bar"></i>
         Gráficos
       </router-link>
       <router-link 
@@ -28,6 +31,7 @@
         tag="li" 
         to="/about"
       >
+        <i class="pi pi-info-circle"></i>
         Sobre
       </router-link>
     </ul>

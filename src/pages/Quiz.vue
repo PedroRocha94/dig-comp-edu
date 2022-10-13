@@ -3,18 +3,18 @@
     <Sidebar/>
     <div class="content">
       <h1>Questionário</h1>
-      <span>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Incidunt architecto saepe iste eaque temporibus. Error accusamus, 
-        sunt ullam ipsum ad atque laborum quo pariatur vel fuga dolor, culpa 
-        dolores quidem!
-      </span>
+      <Questionnaire />
     </div>
   </div>
 </template>
 
 <script>
+import Questionnaire from '../components/Questionnaire.vue';
+
 export default {
-  name: 'Quiz'
+  name: 'Quiz',
+  components: {
+    Questionnaire
+  }
 }
 </script>

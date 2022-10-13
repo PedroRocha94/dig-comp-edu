@@ -1,0 +1,57 @@
+.questionnaire {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  min-height: 94.2vh;
+
+  .questionnaire-section {
+    background-color: white;
+    padding: 1rem;
+    width: 100%;
+    max-width: 80rem;
+    border-radius: 0.5rem;
+
+    .questionnaire-header {
+      margin: 2rem;
+    }
+
+    .question {
+      display: flex;
+      margin-bottom: 1rem;
+      
+      .question-text {
+        font-weight: 400;
+      }
+    }
+
+    .options {
+      margin-bottom: 1rem;
+
+      .option {
+        display: block;
+        padding: 1rem;
+        background-color: #eff3f8;
+        margin-bottom: 1rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+      }
+
+      .option:hover {
+        background-color: #AACBF4;
+      }
+
+      .option.selected {
+        background-color: #AACBF4;
+      }
+
+      .option:last-of-type {
+        margin-bottom: 0;
+      }
+
+      .option input {
+        display: none;
+      }
+    }
+  }
+}
