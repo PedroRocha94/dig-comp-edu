@@ -119,15 +119,19 @@ export default {
   },
   methods: {
     next() {
-      this.areas.forEach(area => {
-        if(this.getCurrentQuestion.area.id === area.value) {
-          area.result += this.getCurrentQuestion.selected - 1;
-        }
-      })
+      this.saveResultAnswers();
       nextQuestion();
     },
     goToCharts() {
       this.$router.push("/charts");
+    },
+    saveResultAnswers() {
+      this.areas.forEach(area => {
+        if(this.getCurrentQuestion.area.id === area.value) {
+          area.result += this.getCurrentQuestion.selected - 1;
+        }
+      });
+      localStorage.setItem('areas', JSON.stringify(this.areas));
     }
   }
 }
