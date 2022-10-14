@@ -5,7 +5,7 @@
       class="questionnaire-section"
     >
       <div class="questionnaire-header">
-        <h2>Envolvimento profissional</h2>
+        <h2>{{ getCurrentQuestion.area.name }}</h2>
       </div>
 
       <div class="question">
@@ -88,11 +88,42 @@ export default {
       questions: questions,
       quizCompleted: quizCompleted,
       currentQuestion: currentQuestion,
-      getCurrentQuestion: getCurrentQuestion
+      getCurrentQuestion: getCurrentQuestion,
+      areas: [
+        {
+          value: 1,
+          result: 0
+        },
+        {
+          value: 2,
+          result: 0
+        },
+        {
+          value: 3,
+          result: 0
+        },
+        {
+          value: 4,
+          result: 0
+        },
+        {
+          value: 5,
+          result: 0
+        },
+        {
+          value: 6,
+          result: 0
+        },
+      ]
     }
   },
   methods: {
     next() {
+      this.areas.forEach(area => {
+        if(this.getCurrentQuestion.area.id === area.value) {
+          area.result += this.getCurrentQuestion.selected - 1;
+        }
+      })
       nextQuestion();
     },
     goToCharts() {
