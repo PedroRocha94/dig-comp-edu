@@ -277,7 +277,7 @@ export const questions = ref([
     id: 1,
     area: {
       id: 6,
-      name: 'Promoção da competências digital dos aprendentes'
+      name: 'Promoção da Competências Digital dos Alunos'
     },
     question: 'Ensino aos meus alunos como avaliar a confiabilidade da informação, identificar desinformação e informação tendenciosa',
     options: [
@@ -293,7 +293,7 @@ export const questions = ref([
     id: 2,
     area: {
       id: 6,
-      name: 'Promoção da competências digital dos aprendentes'
+      name: 'Promoção da Competências Digital dos Alunos'
     },
     question: 'Preparo tarefas que requerem que os alunos usem meios digitais para comunicarem e colaborarem uns com os outros ou com um público externo',
     options: [
@@ -309,7 +309,7 @@ export const questions = ref([
     id: 3,
     area: {
       id: 6,
-      name: 'Promoção da competências digital dos aprendentes'
+      name: 'Promoção da Competências Digital dos Alunos'
     },
     question: 'Preparo atividades que requerem que os alunos criem conteúdo digital; p. ex. vídeos, áudios, fotos, apresentações digitais, blogues, wikis ...',
     options: [
@@ -325,7 +325,7 @@ export const questions = ref([
     id: 4,
     area: {
       id: 6,
-      name: 'Promoção da competências digital dos aprendentes'
+      name: 'Promoção da Competências Digital dos Alunos'
     },
     question: 'Ensino os alunos a usarem tecnologia digital de forma segura e responsável',
     options: [
@@ -341,7 +341,7 @@ export const questions = ref([
     id: 5,
     area: {
       id: 6,
-      name: 'Promoção da competências digital dos aprendentes'
+      name: 'Promoção da Competências Digital dos Alunos'
     },
     question: ' Incentivo os alunos a usarem tecnologias digitais de forma criativa para resolverem problemas concretos, p.ex., para superar obstáculos ou desafios emergentes no processo de aprendizagem',
     options: [

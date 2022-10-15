@@ -96,26 +96,32 @@ export default {
       areas: [
         {
           value: 1,
+          name: '',
           result: 0
         },
         {
           value: 2,
+          name: '',
           result: 0
         },
         {
           value: 3,
+          name: '',
           result: 0
         },
         {
           value: 4,
+          name: '',
           result: 0
         },
         {
           value: 5,
+          name: '',
           result: 0
         },
         {
           value: 6,
+          name: '',
           result: 0
         },
       ]
@@ -133,6 +139,7 @@ export default {
       this.areas.forEach(area => {
         if(this.getCurrentQuestion.area.id === area.value) {
           area.result += this.getCurrentQuestion.selected - 1;
+          area.name = this.getCurrentQuestion.area.name
         }
       });
       localStorage.setItem('areas', JSON.stringify(this.areas));

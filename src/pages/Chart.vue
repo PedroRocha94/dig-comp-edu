@@ -8,12 +8,48 @@
       </div>
       <div class="tab-view">
         <TabView>
-          <TabPanel header="Envolvimento"> Content I </TabPanel>
-          <TabPanel header="Recursos"> Content II </TabPanel>
-          <TabPanel header="Ensino"> Content III </TabPanel>
-          <TabPanel header="Avaliação"> Content I </TabPanel>
-          <TabPanel header="Capacitação"> Content II </TabPanel>
-          <TabPanel header="Promoção"> Content III </TabPanel>
+          <TabPanel 
+            header="Envolvimento"
+          > 
+            <InfoArea 
+              :area="areas[0]"
+            /> 
+          </TabPanel>
+          <TabPanel 
+            header="Recursos"
+          > 
+            <InfoArea 
+              :area="areas[1]"
+            /> 
+          </TabPanel>
+          <TabPanel 
+            header="Ensino"
+          > 
+            <InfoArea 
+              :area="areas[2]"
+            />  
+          </TabPanel>
+          <TabPanel 
+            header="Avaliação"
+          > 
+            <InfoArea 
+              :area="areas[3]"
+            />  
+          </TabPanel>
+          <TabPanel 
+            header="Capacitação"
+          > 
+            <InfoArea 
+              :area="areas[4]"
+            /> 
+          </TabPanel>
+          <TabPanel 
+            header="Promoção"
+          > 
+            <InfoArea 
+              :area="areas[5]"
+            />  
+          </TabPanel>
         </TabView>
       </div>
     </div>
@@ -21,13 +57,17 @@
 </template>
 
 <script>
+import InfoArea from '../components/InfoAreas.vue';
 import Chart from "chart.js/auto";
 
 export default {
   name: "Chart",
+  components: {
+    InfoArea
+  },
   data() {
     return {
-      areas: {},
+      areas: [],
     };
   },
   mounted() {
@@ -87,14 +127,11 @@ export default {
   },
   methods: {
     getValueAreas() {
-      let data = {};
+      let data = [];
       let areasStringLocalStorage = localStorage.getItem("areas");
       data = JSON.parse(areasStringLocalStorage);
       this.areas = data;
-    },
-    showResult() {
-      console.log(this.areas[0].result);
-    },
+    }
   },
 };
 </script>
