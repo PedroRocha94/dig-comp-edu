@@ -60,8 +60,12 @@
       v-else
       class="finish-quiz"
     >
-      <h2 class="finish-quiz-title">Você finalizou sua auto avaliação</h2>
-      <span class="finish-quiz-message">Você pode ver seu resultado na aba de resultados</span>
+      <h2 class="finish-quiz-title">
+        Você finalizou sua auto avaliação
+      </h2>
+      <span class="finish-quiz-message">
+        Você pode ver seu resultado na aba de resultados
+      </span>
       <Button 
         label="Ir para resultados"
         icon="pi pi-external-link"
