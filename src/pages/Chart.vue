@@ -2,9 +2,19 @@
   <div class="chart">
     <Sidebar />
     <div class="content">
-      <h1 class="title-header">Gráficos</h1>
+      <h1 class="title-header">Resultados</h1>
       <div class="view-chart">
         <canvas id="myChart" width="400" height="150"></canvas>
+      </div>
+      <div class="tab-view">
+        <TabView>
+          <TabPanel header="Envolvimento"> Content I </TabPanel>
+          <TabPanel header="Recursos"> Content II </TabPanel>
+          <TabPanel header="Ensino"> Content III </TabPanel>
+          <TabPanel header="Avaliação"> Content I </TabPanel>
+          <TabPanel header="Capacitação"> Content II </TabPanel>
+          <TabPanel header="Promoção"> Content III </TabPanel>
+        </TabView>
       </div>
     </div>
   </div>
@@ -27,23 +37,23 @@ export default {
       type: "bar",
       data: {
         labels: [
-          "Envolvimento Profissional", 
-          "Recursos Digitais", 
-          "Ensino e Aprendizagem", 
-          "Avaliação", 
-          "Capacitação", 
-          "Promoção"
+          "Envolvimento Profissional",
+          "Recursos Digitais",
+          "Ensino e Aprendizagem",
+          "Avaliação",
+          "Capacitação",
+          "Promoção",
         ],
         datasets: [
           {
             label: "Nível De Competência Digital",
             data: [
-              this.areas[0].result, 
-              this.areas[1].result, 
-              this.areas[2].result, 
-              this.areas[3].result, 
-              this.areas[4].result, 
-              this.areas[5].result
+              this.areas[0].result,
+              this.areas[1].result,
+              this.areas[2].result,
+              this.areas[3].result,
+              this.areas[4].result,
+              this.areas[5].result,
             ],
             backgroundColor: [
               "rgba(255, 99, 132, 0.2)",

@@ -11,7 +11,8 @@ import './assets/sass/_layout.scss';
 import 'primeicons/primeicons.css';
 
 import Button from 'primevue/button';
-
+import TabView from 'primevue/tabview';
+import TabPanel from 'primevue/tabpanel';
 
 const app = createApp(App);
 
@@ -19,5 +20,8 @@ app.use(router);
 
 app.component('Sidebar', Sidebar);
 app.component('Button', Button);
+app.component('TabView', TabView);
+app.component('TabPanel', TabPanel);
+
 
 app.mount('#app');

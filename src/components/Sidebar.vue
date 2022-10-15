@@ -24,7 +24,7 @@
         to="/charts"
       >
         <i class="pi pi-chart-bar"></i>
-        Gráficos
+        Resultados
       </router-link>
       <router-link 
         class="option"
