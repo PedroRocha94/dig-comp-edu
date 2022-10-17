@@ -8,6 +8,13 @@
       </div>
       <div class="tab-view">
         <TabView>
+          <TabPanel
+            header="Geral"
+          >
+            <InfoArea
+              :area="areas[6]"
+            />
+          </TabPanel>
           <TabPanel 
             header="Envolvimento"
           > 
@@ -67,11 +74,12 @@ export default {
   },
   data() {
     return {
-      areas: [],
+      areas: []
     };
   },
   mounted() {
     this.getValueAreas();
+    this.sumResultsAreas();
     const ctx = document.getElementById("myChart");
     const myChart = new Chart(ctx, {
       type: "bar",
@@ -131,6 +139,17 @@ export default {
       let areasStringLocalStorage = localStorage.getItem("areas");
       data = JSON.parse(areasStringLocalStorage);
       this.areas = data;
+    },
+    sumResultsAreas() {
+      let newArea = {
+        value: 7,
+        name: 'Geral',
+        result: 0
+      }
+      this.areas.forEach(area => {
+        newArea.result += area.result
+      });
+      this.areas.push(newArea);
     }
   },
 };
