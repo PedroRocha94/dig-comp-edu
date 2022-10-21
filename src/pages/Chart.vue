@@ -78,6 +78,7 @@ export default {
     };
   },
   mounted() {
+    this.prepareChart();
     this.getValueAreas();
     this.sumResultsAreas();
     const ctx = document.getElementById("myChart");
@@ -139,6 +140,45 @@ export default {
       let areasStringLocalStorage = localStorage.getItem("areas");
       data = JSON.parse(areasStringLocalStorage);
       this.areas = data;
+    },
+    prepareChart() {
+      if(localStorage.getItem('areas')) {
+        return;
+      } else {
+        let areas = [
+          {
+            value: 1,
+            name: 'Envolvimento Profissional',
+            result: 0
+          },
+          {
+            value: 2,
+            name: 'Recursos Digitais',
+            result: 0
+          },
+          {
+            value: 3,
+            name: 'Ensino e Aprendizagem',
+            result: 0
+          },
+          {
+            value: 4,
+            name: 'Avaliação',
+            result: 0
+          },
+          {
+            value: 5,
+            name: 'Capacitação dos Alunos',
+            result: 0
+          },
+          {
+            value: 6,
+            name: 'Promoção da Competências Digital dos Alunos',
+            result: 0
+          }
+        ];
+        localStorage.setItem('areas', JSON.stringify(areas));
+      }
     },
     sumResultsAreas() {
       let newArea = {
