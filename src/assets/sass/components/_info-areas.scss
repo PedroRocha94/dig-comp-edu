@@ -1,0 +1,15 @@
+.info-areas {
+  .header {
+    margin: 0 0 1rem 0;
+  }
+
+  .info-areas-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .info-areas-content-description {
+      text-align: justify;
+    }
+  }
+}

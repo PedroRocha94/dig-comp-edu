@@ -1,22 +1,14 @@
 <template>
   <div class="info-areas">
-    <div class="header" style="margin: 0 0 1rem 0">
+    <div class="header" >
       <h2>{{ area.name }}</h2>
     </div>
     <div 
-      class="info-areas-content" 
-      style="
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;"
+      class="info-areas-content"
     >
       <h3>{{ ranking }}</h3>
       <span>Você foi classificado como {{ ranking }}</span>
-      <p
-        style="
-        text-align: justify;
-        "
-      >
+      <p class="info-areas-content-description">
         Isto significa que questiona a adequação de práticas digitais e pedagógicas contemporâneas, das quais já é 
         Líder. Está preocupado(a) com as limitações ou desvantagens dessas práticas e é levado(a) pelo impulso para 
         inovar cada vez mais a educação. Experimenta tecnologias digitais altamente inovadoras e complexas e/ou 
