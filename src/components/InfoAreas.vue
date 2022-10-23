@@ -13,11 +13,9 @@
         class="info-areas-content-description"
       >
         Isto significa que tem uma oportunidade para começar a melhorar a utilização que faz das tecnologias digitais 
-        para o ensino. O feedback deste questionário identificou várias ações que pode tentar. Selecione uma ou duas 
-        para começar durante o próximo período letivo, concentrando-se em melhorar significativamente as suas 
-        estratégias de ensino. Ao fazer isso, estará a movimentar-se para a próxima etapa da competência digital, o 
-        nível do(a) Explorador(a).
-
+        para o ensino. Selecione uma ou duas para começar durante o próximo período letivo, concentrando-se em melhorar 
+        significativamente as suas estratégias de ensino. Ao fazer isso, estará a movimentar-se para a próxima etapa da 
+        competência digital, o nível do(a) Explorador(a).
       </p>
       <p
         v-else-if="ranking === 'Explorador'" 
@@ -40,7 +38,6 @@
         tecnologias digitais a métodos e estratégias pedagógicas. Tente dar a si mesmo(a) mais algum tempo para 
         experimentar e refletir, complementando-o com incentivo colaborativo e troca de conhecimento para chegar ao 
         próximo nível, o de Especialista (B2).
-
       </p>
       <p
         v-else-if="ranking === 'Especialista'" 
@@ -53,7 +50,6 @@
         experimentação como um meio de expandir, estruturar e consolidar o seu repertório de estratégias. Partilhe o 
         seu conhecimento com outros professores e continue a desenvolver, de forma crítica, as suas estratégias 
         digitais para alcançar o nível de Líder (C1).
-
       </p>
       <p
         v-else-if="ranking === 'Líder'" 

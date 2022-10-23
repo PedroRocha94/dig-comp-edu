@@ -2,7 +2,10 @@
   <div class="quiz">
     <Sidebar/>
     <div class="content">
-      <h1 class="title-header">Auto Avaliação</h1>
+      <div class="header">
+        <h1 class="header-title">Auto Avaliação</h1>
+        <img src="../assets/selfie_logo.png" alt="Logomarca">
+      </div>
       <Questionnaire />
     </div>
   </div>

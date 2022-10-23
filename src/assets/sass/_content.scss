@@ -2,11 +2,26 @@
   width: 78%;
   background-color: #eeeeee;
 
-  .title-header {
-    margin: 1rem 0 0 2.7rem;
+  .header {
+    display: flex;
+    flex-direction: row;
+    height: 4rem;
+    width: 95%;
+    align-items: center;
+    justify-content: space-between;
     background-color: white;
-    width: 25%;
+    margin: 0.5rem 0 0 1.8rem;
     border-radius: 0.5rem;
-    padding: 0.5rem 0 0.5rem 1rem;
+
+    .header-title {
+      margin-left: 1rem;
+      font-size: 1.75rem;
+    }
+
+    img {
+      height: 4rem;
+      width: 15%;
+      margin-right: 2rem;
+    }
   }
 }

@@ -2,7 +2,10 @@
   <div class="chart">
     <Sidebar />
     <div class="content">
-      <h1 class="title-header">Resultados</h1>
+      <div class="header">
+        <h1 class="header-title">Resultados</h1>
+        <img src="../assets/selfie_logo.png" alt="Logomarca">
+      </div>
       <div class="view-chart">
         <canvas id="myChart" width="400" height="150"></canvas>
       </div>
