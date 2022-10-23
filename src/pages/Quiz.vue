@@ -4,7 +4,7 @@
     <div class="content">
       <div class="header">
         <h1 class="header-title">Auto Avaliação</h1>
-        <img src="../assets/selfie_logo.png" alt="Logomarca">
+        <img src="../assets/images/selfie_logo.png" alt="Logomarca">
       </div>
       <Questionnaire />
     </div>

@@ -1,7 +1,6 @@
 .home{
   display: flex;
   flex-direction: row;
-  height: 100vh;
 
   .content {
     .text-body {
@@ -10,18 +9,30 @@
       background-color: white;
       width: 95%;
       padding: 2rem;
-      margin: 1rem 0 0 1.8rem;
+      margin: 1rem 0 1rem 1.8rem;
       border-radius: 0.5rem;
       gap: 1rem;
       text-align: justify;
 
       .areas {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         gap: 1rem;
 
-        .area {
+        .areas-card {
+          width: 25%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 1rem;
+          padding: 0.5rem;
+          gap: 1rem;
+          border-radius: 0.5rem;
 
+          img {
+            width: 2.5rem;
+          }
         }
       }
     }
