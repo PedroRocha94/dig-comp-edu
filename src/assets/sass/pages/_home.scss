@@ -28,6 +28,33 @@
       }
     }
 
+    .info-about {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      width: 95%;
+      margin: 1rem 0 1rem 1.8rem;
+      padding: 2rem;
+      border-radius: 0.5rem;
+      text-align: justify;
+      gap: 2rem;
+
+      .info-about-text {
+        width: 60%;
+        gap: 1rem;
+
+        .info-about-text-p {
+          margin-bottom: 1rem;
+        }
+      }
+
+      img {
+        width: 10rem;
+      }
+    }
+
     .text-body {
       display: flex;
       flex-direction: column;
