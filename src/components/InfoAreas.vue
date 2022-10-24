@@ -118,7 +118,7 @@ export default {
       } else if(this.area.value === 2 || this.area.value === 4 || this.area.value === 5) {
         if(this.area.result < 3) {
           return 'Recém-Chegado';
-        } else if(this.area.result >= 4 && this.area.result <= 5) {
+        } else if(this.area.result >= 3 && this.area.result <= 5) {
           return 'Explorador';
         } else if(this.area.result > 5 && this.area.result <= 7) {
           return 'Integrador';
