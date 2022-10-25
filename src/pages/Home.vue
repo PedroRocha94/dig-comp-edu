@@ -8,13 +8,20 @@
       </div>
       <div class="text-header">
         <div class="text-body-image">
-          <img src="../assets/images/background.png" alt="Logo DigCompEdu">
+          <img src="../assets/images/background.png" alt="Imagem de fundo com o tema do DigCompEdu">
         </div>
         <p class="introduction">
           O Quadro Europeu de Competência Digital para Educadores responde à consciencialização 
           crescente entre muitos estados membros europeus que os educadores precisam de um 
           conjunto de competências digitais específicas para a sua profissão de modo a serem capazes 
           de aproveitar o potencial das tecnologias digitais para melhorar e inovar a educação.
+        </p>
+        <h3>Modelo de Autoavaliação - DigCompEdu</h3>
+        <p class="autoavaliacao-description">
+          O DigCompEdu é um modelo desenvolvido na Europa com o intuito de avaliar a competência digital
+          dos professores. Esse quadro de competências foi desenvolvido em resposta 
+          à crescente das tecnologias digitais, com essa crescente é desejado que os professores tenham conhecimento 
+          suficiente para repassar o conhecimento e as melhores formas de utilizar essas tecnologias.
         </p>
       </div>
       <div class="info-about">
@@ -25,7 +32,7 @@
             auto avaliação mas, tendo em mente que as pontuações podem ficar abaixo em algumas áreas específicas.
           </p>
           <p>
-            <strong>Competência digital</strong> são conhecimentos e criatividades que o sujeito tem para utilizar mídias digitais, 
+            <strong>Competências digitais</strong> são conhecimentos e criatividades que o sujeito tem para utilizar mídias digitais, 
             tanto para o aprendizagem quanto para o uso em sociedade.
           </p>
         </div>

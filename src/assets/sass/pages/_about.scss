@@ -1,5 +1,136 @@
 .about{
   display: flex;
   flex-direction: row;
-  height: 100vh;
+
+  .content {
+    .body-text{
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      width: 95%;
+      padding: 2rem;
+      margin: 1rem 0 1rem 1.8rem;
+      border-radius: 0.5rem;
+      gap: 2rem;
+
+      .section-title {
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .digital-technologies {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+
+        .digital-technologies-introduction {
+          display: flex;
+          flex-direction: row;
+
+          .digital-technologies-text {
+            display: flex;
+            flex-direction: column;
+            gap: 1.1rem;
+            margin-right: 1.5rem;
+            margin-bottom: 1rem;
+          }
+        }
+
+        p {
+          text-align: justify;
+        }
+        img {
+          width: 11rem;
+        }
+      }
+
+      .digital-competence {
+        display: flex;
+        flex-direction: column;
+        margin: 0 1rem 1rem 1rem;
+
+        .digital-competence-introduction {
+          display: flex;
+          flex-direction: row;
+
+          .digital-competence-text {
+            display: flex;
+            flex-direction: column;
+            gap: 1.1rem;
+            margin-top: 1rem;
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+          }
+        }
+
+        p {
+          text-align: justify;
+        }
+
+        img {
+          width: 10rem;
+        }
+      }
+
+      .digcompedu-framework {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 1rem 1rem 1rem;
+
+        img {
+          width: 20rem;
+          margin-bottom: 1rem;
+        }
+
+        .digcompedu-framework-introduction {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          text-align: justify;
+
+          .digcompedu-framework-areas {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+          }
+
+          .digcompedu-rankings{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+          }
+        }
+      }
+
+      .redirect-to-material {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-left: 1rem;
+        .redirect-to-material-link{
+          display: flex;
+          gap: 0.5rem;
+        }
+      }
+    }
+
+    .footer {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      width: 95%;
+      padding: 2rem;
+      margin: 1rem 0 1rem 1.8rem;
+      border-radius: 0.5rem;
+      gap: 1rem;
+      text-align: justify;
+
+      .copy {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+    }
+  }
 }
